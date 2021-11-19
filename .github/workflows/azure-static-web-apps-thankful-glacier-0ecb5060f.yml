@@ -32,8 +32,8 @@ jobs:
           output_location: "" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
           env: # Add environment variables here
-            REACT_APP_STORAGESASTOKEN: ${{secrets.REACT_APP_STORAGESASTOKEN}}
-            REACT_APP_STORAGERESOURCENAME: ${{secrets.REACT_APP_STORAGERESOURCENAME}}
+            REACT_APP_STORAGESASTOKEN: sv=2020-08-04&ss=bfqt&srt=sco&sp=rwdlacupitfx&se=2021-11-19T15:46:07Z&st=2021-11-18T15:46:07Z&spr=https&sig=sRxMYj%2Bru7kRxSprVblCci1qfWWehUUEgeqshY21j%2FI%3D
+            REACT_APP_STORAGERESOURCENAME: uploadfiletestapp
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
